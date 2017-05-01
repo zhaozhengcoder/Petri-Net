@@ -129,7 +129,7 @@ public:
 	}
 
 	//给当前库所里面的所有变迁增加10秒钟的延时
-	void place_add_10s_delay() {
+	void place_add_cartime_delay() {
 		for (int i = 0; i < add_car_time*frequency; i++) {
 			// 这里一个库所里面的所有变迁 增加0.1秒的延时
 			for (auto it = contain.begin(); it != contain.end(); it++) {
@@ -373,12 +373,12 @@ public:
 				act_wait_phase(3, 0, g, c);
 				act_wait_phase(3, 1, g, c);
 
-				g.p[2]->place_add_10s_delay();
-				g.p[3]->place_add_10s_delay();
-				g.p[4]->place_add_10s_delay();
-				g.p[5]->place_add_10s_delay();
-				g.p[6]->place_add_10s_delay();
-				g.p[7]->place_add_10s_delay();
+				g.p[2]->place_add_cartime_delay();
+				g.p[3]->place_add_cartime_delay();
+				g.p[4]->place_add_cartime_delay();
+				g.p[5]->place_add_cartime_delay();
+				g.p[6]->place_add_cartime_delay();
+				g.p[7]->place_add_cartime_delay();
 
 
 			}
@@ -392,12 +392,12 @@ public:
 				act_wait_phase(2, 1, g, c);
 				act_wait_phase(3, 0, g, c);
 				act_wait_phase(3, 1, g, c);
-				g.p[0]->place_add_10s_delay();
-				g.p[1]->place_add_10s_delay();
-				g.p[4]->place_add_10s_delay();
-				g.p[5]->place_add_10s_delay();
-				g.p[6]->place_add_10s_delay();
-				g.p[7]->place_add_10s_delay();
+				g.p[0]->place_add_cartime_delay();
+				g.p[1]->place_add_cartime_delay();
+				g.p[4]->place_add_cartime_delay();
+				g.p[5]->place_add_cartime_delay();
+				g.p[6]->place_add_cartime_delay();
+				g.p[7]->place_add_cartime_delay();
 			}
 			if (phasenum == 2) {
 				act_run_phase(2, 0, g, c);
@@ -408,12 +408,12 @@ public:
 				act_wait_phase(1, 1, g, c);
 				act_wait_phase(3, 0, g, c);
 				act_wait_phase(3, 1, g, c);
-				g.p[0]->place_add_10s_delay();
-				g.p[1]->place_add_10s_delay();
-				g.p[2]->place_add_10s_delay();
-				g.p[3]->place_add_10s_delay();
-				g.p[6]->place_add_10s_delay();
-				g.p[7]->place_add_10s_delay();
+				g.p[0]->place_add_cartime_delay();
+				g.p[1]->place_add_cartime_delay();
+				g.p[2]->place_add_cartime_delay();
+				g.p[3]->place_add_cartime_delay();
+				g.p[6]->place_add_cartime_delay();
+				g.p[7]->place_add_cartime_delay();
 
 			}
 			if (phasenum == 3) {
@@ -425,12 +425,12 @@ public:
 				act_wait_phase(1, 1, g, c);
 				act_wait_phase(2, 0, g, c);
 				act_wait_phase(2, 1, g, c);
-				g.p[0]->place_add_10s_delay();
-				g.p[1]->place_add_10s_delay();
-				g.p[2]->place_add_10s_delay();
-				g.p[3]->place_add_10s_delay();
-				g.p[4]->place_add_10s_delay();
-				g.p[5]->place_add_10s_delay();
+				g.p[0]->place_add_cartime_delay();
+				g.p[1]->place_add_cartime_delay();
+				g.p[2]->place_add_cartime_delay();
+				g.p[3]->place_add_cartime_delay();
+				g.p[4]->place_add_cartime_delay();
+				g.p[5]->place_add_cartime_delay();
 			}
 		}
 
